@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #c7a763;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar {
+    padding: 30px 0px;
+    width: 100%;
+    height: 10%;
+}
+
+.navbar ul {
+    list-style-type: none; 
+    margin: 0 100px;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.navbar a:hover {
+    font-weight: 500;
+}
+
+.navbar a.active {
+    font-weight: 500;
+}
+
+.centerbox {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    top: 20%;
+}
+
+.boulder {
+    width: 200px; 
+    height: 200px; 
+    background: radial-gradient(circle at 30% 30%, #7f8c8d, #34495e);
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    color: white; 
+    font-size: 20px; 
+    bottom: 10%;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.ground {
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    left: 27.2%;
+    bottom: 3%;
+    z-index: -1;
+    transform: rotate(-35deg);
+    background-color: rgb(82, 80, 75);
+    border-radius: 15px;
+}
