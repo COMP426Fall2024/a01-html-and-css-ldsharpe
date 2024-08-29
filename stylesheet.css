@@ -1,4 +1,4 @@
-body {
+.mainbody {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -90,3 +90,42 @@ body {
     background-color: rgb(82, 80, 75);
     border-radius: 15px;
 }
+
+
+/*MYTH PAGE*/
+
+.mythbody {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: #c7a763;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about_myth {
+    display: flex;
+    flex-direction: row;
+}
+
+.box1, .box2 {
+    min-height: 500px;
+}
+
+.box1 {
+    background-color: white;
+    width: 40%;
+}
+
+.box2 {
+    background-color: black;
+    width: 60%;
+}
+
+#word1, #word2 {
+    color: black;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
