@@ -215,3 +215,14 @@
     margin-right: 2rem;
     text-align: left;
 }
+
+
+.images img {
+    height: 300px;
+    width: auto;
+}
+
+table {
+    border-spacing: 1rem;
+    word-wrap: break-word;
+}
